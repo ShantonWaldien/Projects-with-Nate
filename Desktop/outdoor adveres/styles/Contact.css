@@ -1,0 +1,176 @@
+/* Styling the contact Form */
+
+body{
+  color: #343512;
+  background-color: gold;
+  background-image: url("https://hfpi.ca/files/4414/7638/9709/forest.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  font-family: 'Amatic SC', cursive;
+  font-size: 25px;
+  font-weight: bold;
+
+}
+
+.maindiv{
+  width: 100%;
+  height: 300%;
+}
+.box1{
+  width: 20%;
+  height: 300%;
+  float: left;
+}
+
+h2{
+  text-decoration: underline;
+}
+
+.gridbox1{
+    grid-area: header;
+
+}
+
+#logo {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  text-align: center;
+}
+
+#container {
+    color: #1B6C91;
+    background-color: white;
+    opacity: 0.86;
+    width: 85%;
+    height: 300%;
+    display: grid;
+    grid-template-areas:
+     'header header header'
+     'nav article ads'
+     'footer footer footer';
+    grid-gap: 10px;
+    margin: auto;
+}
+
+/* .navbar{
+  width:900px;
+  height:100px;
+  font-size: 35px;
+  text-align: center;
+} */
+
+li{
+  display: inline;
+}
+
+.navlist{
+  padding: 0;
+  word-spacing:100px;
+  color: #343512;
+  text-align: center;
+}
+
+.gridbox2{
+    grid-area: nav;
+    width:100%;
+    height:100px;
+    font-size: 35px;
+    text-align: center;
+}
+
+
+.gridbox3 body {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+
+.para-color{
+  color: #4B6622;
+  text-decoration: underline;
+  font-size: 5000px;
+}
+.gridbox3 h1, .gridbox3 h2, .gridbox3 h3 {
+  margin: 0 0 35px 0;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+.gridbox3 p {
+  margin: 0 0 25px;
+  font-size: 25px;
+  line-height: 1.6em;
+}
+.gridbox3 a {
+  color: #26a5d3;
+}
+.gridbox3 a:hover, .gridbox3 a:focus {
+  text-decoration: none;
+  color: #26a5d3;
+}
+.gridbox3 #contact {
+  background: teal;
+  color: #f4f4f4;
+  padding-bottom: 80px;
+}
+.gridbox3 textarea.form-control {
+  height: 70px;
+
+}
+
+.gridbox4{
+    grid-area: ads;
+}
+
+.gridbox5{
+    grid-area: footer;
+    background-color: #C6D8D3;
+    color: black;
+    text-align: center;
+
+
+    }
+
+.box2{
+      width: 20%;
+      height: 300%;
+      float: right;
+}
+
+@media screen and (max-width: 640px) {
+
+  #container {
+    width: 100%;
+  }
+  #logo {
+    width: 40%;
+    margin-left: 25%;
+  }
+
+  h2{
+    text-align: center;
+    margin-left: 15%;
+    margin: 0;
+    padding:0;
+  }
+}
+
+
+/* styling media querie for mobile view */
+@media screen and (max-width: 360px) {
+
+  #container {
+    width: 100%;
+  }
+  #logo {
+    width: 40%;
+    margin-left: 5%;
+  }
+
+  h2{
+    text-align: center;
+    margin-left: 15%;
+    margin: 0;
+    padding:0;
+  }
+}

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Loops</title>
+    <link rel="stylesheet" href="styles/styles.css">
+  </head>
+  <body>
+
+    <input id="text"type="text" name="" value="">
+
+    <button id="button" onclick="btnClick()" type="button" name="button">Test me</button>
+
+    <script type="text/javascript">
+
+      // for (var i = 0; i < 10 ; i++) {
+      //   console.log(i);
+      // }
+      //
+      // var toys = ['car', 'teddy bear', 'soccer ball', 'doll'];
+      //
+      // // ES6
+      // for (let value of toys) {
+      //   document.write(value);
+      // }
+
+      // // ES5
+      // for (var i = 0; i < toys.length; i++) {
+      //   console.log(toys[i]); //we use square brackets to list the item in the array
+      // }
+
+      // let list = [8, 3, 11, 9, 6];
+      //
+      // // loops used to display repetitive elements
+      // for(var i = 0; i < list.length; i++) {
+      //   var li = '<li>' + list[i] + '</li>';
+      //   document.write(li);
+      // }
+      //
+      // // loops can also be used to search for values
+      // for (let value of list) {
+      //   if(value < 10){
+      //     document.write(value);
+      //   }
+      // }
+
+      // var food = ['chocolate', 'fudge', 'brownies', 'pizza']
+      // for (var i = 0; i < food.length; i++) {
+      //   console.log(food[i])
+      // }
+
+// 06 June 2018
+
+      var hobbies = [' soccer ' , ' swimming ' , ' dancing ' , ' reading '];
+
+      for (let value of hobbies) {
+        document.write(value);
+
+// binds an onclick event when the page loads
+document.getElementById('button').onclick = function(){
+  // grabs value by input
+  var userInput = document.getElementById('text').value;
+  document.write(userInput)
+  var hobbies = [' soccer ' , ' swimming ' , ' dancing ' , ' reading '];
+
+  for (let value of hobbies) {
+    document.write(value);
+
+  //
+  // if (userInput) {
+  //   // logs vaule to console
+  //   // console.log(value, userInput)
+  //   document.write(value && userInput)
+  //   console.log(value && userInput)
+  // }
+}
+}
+}
+
+var text = "";
+var i = 0;
+
+//while loops
+
+while (i<10) {
+  text += "the number is" + i;
+  i++
+}
+
+//do loops
+do{
+  text += "the number is" + i;
+  i++
+}
+while(i<10)
+
+
+var fish = [' Nemo' , ' Dory' , ' Marlin' , ' Bubbles'];
+var i = 0;
+var text = "";
+
+while (fish[i]) {
+  text += fish[i] + "<br>";
+  i++;
+}
+    </script>
+  </body>
+</html>

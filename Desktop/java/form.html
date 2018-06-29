@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <form>
+  <div>
+    <label for="exampleInputName2">Name</label>
+    <input  id="text"  type="text" >
+  </div>
+  <br>
+  <div>
+    <label for="exampleInputEmail2">Email</label>
+    <input id="text" type="text" value="">
+  </div>
+  <br>
+  <div>
+    <label for="contactnumber">Contact number</label>
+    <input type="number" id="contactnumber" value="" >
+  </div>
+  <br>
+
+  <div>
+    <label for="preffered means of contact">how would you like to be contacted</label> <br>
+    <input type="radio" name="email" value="email"> Email<br>
+    <input type="radio" name="mobile" value="mobile"> Mobile <br>
+  </div>
+  <br>
+
+  <div>
+    <label for="exampleInputText">Enquiry</label><br>
+    <textarea></textarea>
+  </div>
+  <br>
+  <button id="button" type="submit" onclick="btnClick()">Send Message</button>
+</form>
+
+
+    <script type="text/javascript">
+// var x = 5
+// console.log(x);
+//     document.getElementById('button').onclick = function btnClick(){
+//      var userInput = document.getElementById('text').value;
+//       console.log(userInput);
+//       if else {
+//         ((userInput.length) =0){
+//           console.log('invalid');
+//           alert('invalid information')
+//       }
+// }
+//     document.getElementById('button').onclick = function btnClick(){
+//       var userInput = document.getElementById(contactnumber).value
+//           if ((userInput.length) !=10){
+//             console.log('invalid contact number');
+//            alert('invalid Contact number');
+//           }
+//         }
+//       }
+
+// answer
+
+// get all varibles
+var name = document.getElementById('name').values;
+var surname = document.getElementById('surname').values;
+var contactnumber = document.getElementById('numbere').values;
+var email  = document.getElementById('email').values;
+var message = document.getElementById('message').values;
+var error = document.getElementById('error');
+
+// clear error;
+error.innerHTML = "please enter your name";
+
+// name must be blank
+
+    </script>
+  </body>
+</html>

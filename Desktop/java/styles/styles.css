@@ -1,0 +1,10 @@
+/* java styling */
+body{
+  background-color: pink;
+}
+
+div{
+  height: 130px;
+  width: 130px;
+  float: left;
+}

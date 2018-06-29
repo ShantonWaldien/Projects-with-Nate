@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="styles/styles.css">
+  </head>
+  <body>
+    <div class="">
+      <h1>Enter your age, I dare you</h1>
+      <input id="age" type="text" name="" value="" placeholder="age">
+    </div>
+
+    <div id="results">
+      <p></p>
+    </div>
+    <div class="button">
+      <button type="button" name="button" onclick="ages()">submit</button>
+    </div>
+
+
+  <script type="text/javascript">
+  alert("Enter your age in the space provided");
+
+  function ages(){
+    var ageField = document.getElementById('age')
+    var age = ageField.value;
+    var results = document.getElementById('results');
+
+    if (Number(age)===0) {
+      results.innerHTML = "Enter your age first";
+    }else if (age<=12){
+      results.innerHTML = "underaged"
+    }else if (age<=20){
+      results.innerHTML = "Teenager Slay"
+    }else if (age<=40) {
+      results.innerHTML = "your life is practically over"
+    }else if (age<=60) {
+      results.innerHTML = "traveling beckons"
+    } else if (age>=60&&age <=110){
+      results.innerHTML = "its over"
+    }
+  }
+
+  </script>
+  </body>
+</html>

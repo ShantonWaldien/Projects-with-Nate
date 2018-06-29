@@ -1,0 +1,21 @@
+/* Styling by Jamie-lee */
+
+#container{
+  height: 300px;
+  width: 300px;
+  border-radius: 50%;
+  border-style: solid;
+  border-color: purple;
+  color: purple;
+  border-width: 3px;
+  background-color: gold;
+  font-size: 20px;
+  text-decoration: underline;
+  text-align: center;
+}
+
+#Birthday{
+    padding: 10px;
+    font-size: 50px;
+    text-decoration: none;
+}
